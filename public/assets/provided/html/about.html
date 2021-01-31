@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+
+        <title>10up Blog - About</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="cleartype" content="on" />
+
+        <!-- Organize/build CSS as you see fit. -->
+        <link rel="stylesheet" href="../css/layout.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/post.css" />
+        <link rel="stylesheet" href="../css/login.css" />
+
+    </head>
+    <body>
+
+        <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+            <div class="site-title" itemscope itemtype="http://schema.org/Organization">
+                10up Blog
+            </div>
+
+             <nav class="site-navigation" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+
+                <a href="#menu-main-nav" id="js-menu-toggle" class="site-menu-toggle">
+                    <span class="screen-reader-text">Primary Menu</span>
+                    <span aria-hidden="true">☰</span>
+                </a>
+
+                 <!-- Make sure to update menu links to work with your app. -->
+                <ul id="menu-main-nav" class="primary-menu">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1912">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Should only show when user is logged out -->
+                    <li class="logged-out menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
+                        <a href="login.html">Login</a>
+                    </li>
+
+                    <!-- Should only show when user is logged in -->
+                    <li class="logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-1915">
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <h1>
+            About
+        </h1>
+
+        <div class="page">
+            <!-- Retrieve about text from WP API. -->
+            10up about text...
+        </div>
+
+    </body>
+</html>
